@@ -15,12 +15,20 @@ public class handleSearchByKey {
         newVal = newVal.toUpperCase();
 
         ObservableList<String> subentries = FXCollections.observableArrayList();
-        for (Object entry : list.getItems()) {
+        for ( Object entry: list.getItems() ) {
             boolean match = true;
-            String entryText = (String) entry;
-            if ( ! entryText.toUpperCase().contains(part) ) {
-                match = false;
-                break;
+            String entryText = (String)entry;
+            for ( String part: parts ) {
+                // The entry needs to contain all portions of the
+                // search string *but* in any order
+                if ( ! entryText.toUpperCase().contains(part) ) {
+                    match = false;
+                    break;
+                }
+            }
+
+            if ( match ) {
+                subentries.add(entryText);
             }
         }
         list.setItems(subentries);
