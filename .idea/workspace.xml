@@ -6,9 +6,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="378870c7-9109-4ff4-ae89-a1ea52dea7b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/icream/the_project/handleSearchByKey.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/icream/the_project/handleSearchByKey.java" />
-    </list>
+    <list default="true" id="378870c7-9109-4ff4-ae89-a1ea52dea7b5" name="Default" comment="" />
     <ignored path="the-project.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
