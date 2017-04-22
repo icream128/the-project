@@ -6,14 +6,19 @@ package com.example.icream.the_project;
 
 public class handleSearchByKey {
     public void handleSearchByKey(String oldVal, String newVal) {
-
-        if (oldVal != null && (newVal.length() < oldVal.length())) {
-
-            list.setItems(entries);
+        // If the number of characters in the text box is less than last time
+        // it must be because the user pressed delete
+        if ( oldVal != null && (newVal.length() < oldVal.length()) ) {
+            // Restore the lists original set of entries
+            // and start from the beginning
+            list.setItems( entries );
         }
 
-        newVal = newVal.toUpperCase();
+        // Break out all of the parts of the search text
+        // by splitting on white space
+        String[] parts = newVal.toUpperCase().split(" ");
 
+        // Filter out the entries that don't contain the entered text
         ObservableList<String> subentries = FXCollections.observableArrayList();
         for ( Object entry: list.getItems() ) {
             boolean match = true;
