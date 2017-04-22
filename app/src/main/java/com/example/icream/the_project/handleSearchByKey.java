@@ -16,9 +16,11 @@ public class handleSearchByKey {
 
         ObservableList<String> subentries = FXCollections.observableArrayList();
         for (Object entry : list.getItems()) {
+            boolean match = true;
             String entryText = (String) entry;
-            if (entryText.toUpperCase().contains(newVal)) {
-                subentries.add(entryText);
+            if ( ! entryText.toUpperCase().contains(part) ) {
+                match = false;
+                break;
             }
         }
         list.setItems(subentries);
