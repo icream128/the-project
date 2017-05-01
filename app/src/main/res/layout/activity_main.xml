@@ -12,10 +12,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="Hello World!"
+        android:text="Subject"
         android:layout_weight="2"
-        android:layout_gravity="left"
-        android:background="#ffaaaa"/>
+        android:layout_gravity="left" />
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -26,9 +25,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="Hello World!"
+        android:text="Year"
         android:layout_weight="2"
-        android:background="#ffaaffaa"
         android:layout_gravity="left"
         />
     <Spinner
@@ -41,9 +39,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="Hello World!"
+        android:text="Day"
         android:layout_weight="2"
-        android:background="#ffaaaffa"
         android:layout_gravity="left"
         />
     <Spinner
@@ -57,9 +54,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="Hello World!"
         android:layout_weight="2"
-        android:background="#ffaffafa"
         android:layout_gravity="left"/>
 
     <Button
