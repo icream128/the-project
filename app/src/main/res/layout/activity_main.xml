@@ -13,42 +13,42 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="Subject"
-        android:layout_weight="2"
+        android:layout_weight="1"
         android:layout_gravity="left" />
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_weight="1"
-        android:id="@+id/input1"
+        android:layout_weight="2"
+        android:id="@+id/input_spinner1"
         ></Spinner>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="Year"
-        android:layout_weight="2"
+        android:layout_weight="1"
         android:layout_gravity="left"
         />
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_weight="1"
-        android:id="@+id/input2"
+        android:layout_weight="2"
+        android:id="@+id/input_spinner2"
         ></Spinner>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="Day"
-        android:layout_weight="2"
+        android:layout_weight="1"
         android:layout_gravity="left"
         />
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_weight="1"
-        android:id="@+id/input3"
+        android:layout_weight="2"
+        android:id="@+id/input_spinner3"
 
         ></Spinner>
     <TextView
@@ -61,7 +61,7 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#fafaffaf"
+        android:background="#ffce8e"
         android:gravity="center"
         android:text="Matching!" />
 
